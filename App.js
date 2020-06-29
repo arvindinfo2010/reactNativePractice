@@ -1,10 +1,32 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+// import { createStackNavigator } from 'react-navigation-stack';
+// import { createAppContainer } from 'react-navigation';
+// import ComponentsScreen from './src/ComponentsScreen';
+
+// const navigator = createStackNavigator(
+//   {
+//     Components: ComponentsScreen
+//   },
+//   {
+//     initialRouteName: 'Components',
+//     defaultNavigationOptions: {
+//       title: 'App'
+//     }
+//   }
+// );
+
+// export default createAppContainer(navigator);
+
+
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
+import ComponentsScreen from './src/ComponentsScreen';
+import ChangeTextVal from './src/ChangeTextVal';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <ChangeTextVal/>
+      <ComponentsScreen/>
     </View>
   );
 }
@@ -12,7 +34,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'lightgrey',
     alignItems: 'center',
     justifyContent: 'center',
   },
