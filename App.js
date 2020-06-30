@@ -21,12 +21,14 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 import ComponentsScreen from './src/ComponentsScreen';
 import ChangeTextVal from './src/ChangeTextVal';
+import ListScreen from './src/ListScreen';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <ChangeTextVal/>
       <ComponentsScreen/>
+      <ListScreen/>
     </View>
   );
 }
